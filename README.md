@@ -103,6 +103,42 @@ controller.MaxAngularVelocity = 200
 
 <img width="912" height="589" alt="imagen" src="https://github.com/user-attachments/assets/655e2407-948e-4fb8-a969-46556f732651" />
 
+### Ejercicio 2 (complexMap)
+
+Para este ejercicio se establecieron los siguientes waypoints:
+
+```
+waypoints = [2, 2;
+            5 4.5; 
+            7, 6;
+            4, 8; 
+            9, 8; 
+            9, 3;
+            7, 2;
+           ];
+```
+Y se sintonizaron las siguientes variables:
+
+```
+sampleTime = 0.05;              % Sample time [s]
+tVec = 0:sampleTime:200;        % Time array
+
+initPose = [2;2;0];            % Initial pose (x y theta)
+
+lidar.maxRange = 0.5;%5
+
+controller.LookaheadDistance = 0.5;%0.5
+controller.DesiredLinearVelocity = 0.75; %0.75
+controller.MaxAngularVelocity = 200
+```
+
+<img width="912" height="589" alt="imagen" src="https://github.com/user-attachments/assets/32930d15-2143-4de9-bd92-0a757e2e5b6b" />
+
+### Ejercicio 3 (exampleMap)
+
+### Ejercicio 3 (complexMap)
+
+
 
 
 
