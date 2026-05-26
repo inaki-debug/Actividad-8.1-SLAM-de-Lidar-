@@ -178,6 +178,93 @@ controller.MaxAngularVelocity = 200
 
 ### Ejercicio 3 (complexMap)
 
+Para este ejercicio se establecieron los siguientes waypoints:
+
+```
+waypoints = [
+    1, 2;  
+    1, 1;
+    2, 1;
+    2, 2;
+    3, 2;
+    3, 1;
+    4, 1;
+    4, 2;
+    4, 3;
+    3, 3;
+    4, 4;
+    3, 4;
+    2, 4;
+    1, 4;
+    1, 3;  
+    2, 3];
+      
+```
+Y se sintonizaron las siguientes variables:
+
+```
+sampleTime = 0.05;              % Sample time [s]
+tVec = 0:sampleTime:200;        % Time array
+
+initPose = [1;1;0];            % Initial pose (x y theta)
+
+lidar.maxRange = 0.5;%5
+
+controller.LookaheadDistance = 0.5;%0.5
+controller.DesiredLinearVelocity = 0.75; %0.75
+controller.MaxAngularVelocity = 200
+```
+
+
+<img width="912" height="589" alt="imagen" src="https://github.com/user-attachments/assets/8ccf1d07-b2cd-4b2c-a086-905c94e72b22" />
+
+
+# Actividad 8.2 SLAM de LiDAR
+
+En esta actividad se realizó una trayectoria con los siguientes waypoints: `(1, 2), (2, 10), (11, 8), (8, 2), y (1, 2)`. Como en el ejercicio anterior, se establecieron algunos waypoints de apoyo para realizar la trayectoria de manera satisfactoria. 
+
+Para el exampleMap se utilizaron los siguientes waypoints:
+
+```
+waypoints = [
+    1,2;
+    4, 6;
+    2,10;
+    11,8;
+    6,1;
+    8,2;
+    8.5,6;
+    6, 8;
+    1,2];
+```
+
+<img width="912" height="589" alt="imagen" src="https://github.com/user-attachments/assets/ebd778b6-cccb-4c7f-a074-14f890b8ed2a" />
+
+Para el complexMap se utilizaron los siguientes waypoints:
+
+```
+waypoints = [
+    1,2;
+    4, 4;
+    7, 6;
+    2,10;
+    7,6.5;
+    10, 4;
+    13, 6;
+    11, 8;
+    13, 6;
+    10, 4;
+    8, 2;
+    7.5, 4;
+    4, 4;
+    1, 2;]
+```
+
+<img width="912" height="589" alt="imagen" src="https://github.com/user-attachments/assets/ef02a91f-edfa-41de-bf78-9fc946356111" />
+
+
+
+
 
 
 
