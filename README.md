@@ -62,7 +62,7 @@ Y se sintonizaron las siguientes variables:
 sampleTime = 0.05;              % Sample time [s]
 tVec = 0:sampleTime:200;        % Time array
 
-initPose = [4;3;0];            % Initial pose (x y theta)
+initPose = [4;2;0];            % Initial pose (x y theta)
 
 lidar.maxRange = 1;%5
 
